@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# ülesanne 2 ja 5 skript 
+#
+echo  "Erik Sarik "
+echo  "ISP217 "
+echo  "Antud aine tundub iseseisev. "
+echo  "Puudusin esimese tunni"
+
