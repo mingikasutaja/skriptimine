@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# skripti algus
+#
+echo "Today is $(date)" 
+echo "Time is $(date +"%T")"
+echo "Calendar of $(ncal) "
