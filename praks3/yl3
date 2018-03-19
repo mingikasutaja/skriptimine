@@ -1,0 +1,4 @@
+#!/bin/bash
+#
+uptime | awk '{print "skriptimine at "$1,$2,$3,$4 }' | tr -d ","
+
