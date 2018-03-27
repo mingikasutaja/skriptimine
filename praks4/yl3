@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+echo -n "Sisesta reisijate arv ühes grupis(numbrina): "
+read arv
+echo -n "Sisesta kohtade arv bussis(numbrina): "
+read kohtade_arv
+echo -n "Sisesta gruppide arv(numbrina): "
+read grupi_arv
+#
+vajalik_kohaarv=`expr $arv \* $grupi_arv`
+jaak=`expr $vajalik_kohaarv % $kohtade_arv`
+busse=`expr $vajalik_kohaarv / $kohtade_arv`
+
+echo "Maha jääb $jaak inimest ja täielikult täidetud busse on $busse"
