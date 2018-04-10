@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+echo -n "Sisesta a külje pikkus "
+read a
+echo -n "Sisesta b külje pikkus "
+read b
+#
+#a2
+a2=`echo "scale=2;$a^2" | bc`
+#b2
+b2=`echo "scale=2;$b^2" | bc`
+#c2
+c2=`echo "scale=2;$a2+$b2" | bc`
+#c
+c=`echo "scale=2;sqrt($c2)" | bc`
+
+echo "c =$c"
