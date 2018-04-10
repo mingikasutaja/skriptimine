@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+echo "Pühapäev on arv nr 0, Esmaspäevon arv nr 1, ..., Laupäev on arv nr 6"
+# küsime andmed 
+echo -n "Sisesta millal sõidad ära: "
+read reisi_algus
+# küsime kui kaua reisitakse
+echo -n "Sisesta reisi ööpäevade arv: "
+read paevad
+#
+#arvutame reisimise nädalate arvu ja reisipäevade jäägi
+veel_reisi_paevad=$(($paevad % 7))
+#arvutame tagasitulekupäeva võttes ülejäänud päevad millele liidame reisi alguspäevad
+tagasi=$(($reisi_algus + $veel_reisi_paevad))
+#
+#tulemuste väljastamine
+#
+echo "Tagasi oled päeval number $tagasi"
