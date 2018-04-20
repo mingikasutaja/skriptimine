@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+echo -n "Sisesta reisijate arv: "
+read reisijate_arv
+echo -n "Sisesta kohtade arv bussis: "
+read kohtade_arv
+#
+#arvutan bussides olemasoleva kohtade arvu
+bussid=$(($reisijate_arv / $kohtade_arv))
+ylejaak=$(($reisijate_arv / $kohtade_arv))
+#
+#ylejaanud inimesed paigutame uude bussi
+if test $ylejaak -gt 0
+then
+	bussid=$(($bussid + 1))
+fi
+
+#tulemused kuvan kasutajale
+#
+echo "Kokku on vaja $bussid bussi reisijate jaoks"
+#
