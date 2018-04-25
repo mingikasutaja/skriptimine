@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+echo -n "Mis on Teie vanus?(numbrites) "
+read vanus
+#
+if test $vanus -gt 0 -a $vanus -lt 11
+then
+	echo "Oled alaealine "
+elif test $vanus -ge 18 -a $vanus -lt 18
+then
+	echo "Oled nooruk "
+elif test $vanus -ge 18 -a $vanus -lt 60
+then
+	echo "Oled täiskasvanu "
+elif test $vanus -ge 60
+then
+	echo "Oled seenior"
+else
+	echo "Vigane sisend: Palun sisesta vanus numbrites "
+fi
