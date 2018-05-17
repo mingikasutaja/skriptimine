@@ -1,11 +1,26 @@
 #!/bin/bash
 #
-for (( i = 2; i <= 4; i++ ))
+#Kujund mida kasutaja ise saab koostada
+echo -n "Sisesta tärnide arv: "
+read tarv
+for (( i = 1; i <= 5; i++ ))
 do
-	echo -n "$i "
-	for (( j = 1 ; j <= 1; j++ ))
+if (( $i == 1 || $i == 5))
+then
+echo -n $i"."
+	for (( j = 1; j <= $tarv; j++ ))
 	do
-		echo -n "$j "
+		echo -n "*"
 	done
-		echo "*   *"
+	echo ""
+else
+echo -n $i". "
+echo -n "*"
+	for (( q = 2; q <= 4; q++ ))
+	do
+	echo -n " "
+	done
+echo "*"
+fi
+
 done
