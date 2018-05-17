@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+#Ülesande 4 täiendus
+
+echo -n "Sisesta ridade arv: "
+read rida
+for (( i = $rida; i >= 1; i--))
+	do
+		echo -n "$i "
+		for (( j = 1; j <= $i; j++ ))
+			do
+				echo -n "*"
+		done
+		echo ""
+	done
