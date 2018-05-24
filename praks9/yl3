@@ -7,16 +7,16 @@ for (( i = 1; i <= 5; i++ ))
 do
 if (( $i == 1 || $i == 5))
 then
-echo -n $i"."
+echo -n $i". "
 	for (( j = 1; j <= $tarv; j++ ))
 	do
 		echo -n "+"
 	done
-	echo " "
+	echo ""
 else
 echo -n $i". "
 echo -n "+"
-	for (( q = 2; q <= 4; q++ ))
+	for (( q = 2; q < $tarv; q++ ))
 	do
 	echo -n " "
 	done
