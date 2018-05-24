@@ -10,17 +10,17 @@ then
 echo -n $i"."
 	for (( j = 1; j <= $tarv; j++ ))
 	do
-		echo -n "*"
+		echo -n "+"
 	done
-	echo ""
+	echo " "
 else
 echo -n $i". "
-echo -n "*"
+echo -n "+"
 	for (( q = 2; q <= 4; q++ ))
 	do
 	echo -n " "
 	done
-echo "*"
+echo "+"
 fi
 
 done
